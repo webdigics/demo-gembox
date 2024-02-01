@@ -146,3 +146,16 @@ checkList.getElementsByClassName('anchor')[0].onclick = function(evt) {
   else
     checkList.classList.add('visible');
 } 
+document.addEventListener('DOMContentLoaded', function() {
+  // Get all elements with the class '.product-card'
+  var productCards = document.querySelectorAll('.product-card');
+
+  // Loop through each product card
+  productCards.forEach(function(card) {
+    // Add click event listener to each card
+    card.addEventListener('click', function() {
+      // Toggle the 'red-heart' class on click
+      this.classList.toggle('red-heart');
+    });
+  });
+});
