@@ -219,3 +219,5 @@ section{position: relative;}
   .product-images-wrapp{display: none;}
   .product-card-mobile{display: block;}
 }
+@media screen and (max-width:426px) { .product-images-wrapp{display: none;}
+.product-card-mobile{display: block;}}
